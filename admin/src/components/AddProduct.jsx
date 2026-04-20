@@ -23,7 +23,7 @@ const AddProduct = () => {
     }
 
     const Add_product = async () => {
-        const Host = "hhttps://e-commerce-backend-aslv.onrender.com";
+        const Host = "https://e-commerce-backend-aslv.onrender.com";
         let responseData;
         let product = productDetails;
         let formdata = new FormData()
