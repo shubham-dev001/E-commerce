@@ -1,5 +1,5 @@
 const Product = require("../models/product")
-const Host = "http://localhost:8000";
+const Host = "https://e-commerce-backend-aslv.onrender.com";
 
 exports.createProduct = async (req, res) => {
     let products = await Product.find({});
