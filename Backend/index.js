@@ -15,7 +15,9 @@ const app = express();
 app.use(cors({
   origin:[ 
     "http://localhost:5173",
-    "https://e-commerce-frontend-zflk.onrender.com"],
+    "https://e-commerce-frontend-zflk.onrender.com",
+    "https://e-commerce-admin-g6s7.onrender.com"
+  ],
   credentials: true
 }))
 app.options("*", cors());
