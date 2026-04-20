@@ -12,14 +12,14 @@ connectDb();
 
 const app = express();
 
-app.use(cors({
+const corsOptions = {
   origin:[ 
     "http://localhost:5173",
     "https://e-commerce-frontend-zflk.onrender.com",
     "https://e-commerce-admin-g6s7.onrender.com"
   ],
   credentials: true
-}))
+}
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
 app.use(express.json());
