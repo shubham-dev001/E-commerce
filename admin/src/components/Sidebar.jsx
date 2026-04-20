@@ -2,7 +2,7 @@ import React from 'react'
 import "./Css/Sidebar.css"
 import add_product_icon from "../assets/Product_Cart.svg"
 import { Link } from 'react-router-dom'
-import list_product_icon from "../assets/product_list_icon.svg"
+import list_Product_icon from "../assets/Product_list_icon.svg"
 
 const Sidebar = () => {
   return (
@@ -15,7 +15,7 @@ const Sidebar = () => {
       </Link>
       <Link to={"/listproduct"} state={{ textDecoration: "none" }}>
         <div className="sidebar-item">
-          <img src={list_product_icon} alt="" />
+          <img src={list_Product_icon} alt="" />
           <p>List Product</p>
         </div>
       </Link>

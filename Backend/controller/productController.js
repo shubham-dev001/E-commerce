@@ -40,9 +40,14 @@ exports.removeProduct = async (req, res) => {
 }
 
 exports.allProduct = async (req, res) => {
-    let products = await Product.find({})
-    res.send(products);
-}
+  try {
+    const products = await Product.find({});
+    res.status(200).json(products);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server Error" });
+  }
+};
 
 exports.uploadImage = (req, res) => {
     res.json({
