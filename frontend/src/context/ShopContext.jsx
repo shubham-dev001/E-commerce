@@ -14,7 +14,7 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
     const [all_product, setAll_product] = useState([])
     const [cartItems, setCartItems] = useState(getDefaultCart())
-    const Host = "http://localhost:8000";
+    const Host = "https://e-commerce-backend-aslv.onrender.com";
 
     useEffect(() => {
         fetch(`${Host}/allproduct`)

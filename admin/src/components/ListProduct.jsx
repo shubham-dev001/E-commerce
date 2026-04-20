@@ -3,7 +3,7 @@ import cross_icon from "../assets/cross_icon.png"
 import "./Css/ListProduct.css"
 
 const ListProduct = () => {
-  const Host = "http://localhost:8000";
+  const Host = "https://e-commerce-backend-aslv.onrender.com";
   const [allProducts, setAllProducts] = useState([])
   const fetchInfo = async () => {
     await fetch(`${Host}/allproduct`)
