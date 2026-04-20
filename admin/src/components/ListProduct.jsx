@@ -13,7 +13,7 @@ const ListProduct = () => {
   useEffect(() => {
     fetchInfo();
   }, [])
-  const RmoveItem = async (id) => {
+  const RemoveItem = async (id) => {
     await fetch(`${Host}/removeproduct`, {
       method: "POST",
       headers: {
@@ -45,7 +45,7 @@ const ListProduct = () => {
             <p>${product.old_price}</p>
             <p>${product.new_price}</p>
             <p>{product.category}</p>
-            <img onClick={() => { RmoveItem(product.id) }} src={cross_icon} className='listproduct-remove-icon' alt="" />
+            <img onClick={() => { RemoveItem(product.id) }} src={cross_icon} className='listproduct-remove-icon' alt="" />
           </div>
             <hr />
 
