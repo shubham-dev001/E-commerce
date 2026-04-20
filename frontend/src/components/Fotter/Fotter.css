@@ -1,0 +1,138 @@
+.fotter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+width: 100%;
+}
+.fotter-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fotter-logo img{
+    width: 70px;
+}
+.fotter-logo p {
+    color: #383838;
+    font-size: 25px;
+    font-weight: 800;
+}
+.fotter-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    color: #252525;
+}
+.fotter-links li{
+    cursor: pointer;
+}
+.fotter-social-icon{
+     display: flex;
+    gap: 10px;
+}
+.fotter-icon-container{
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: #fbfbfb;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+}
+.fotter-copyright{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #1a1a1a;
+}
+.fotter-copyright hr{
+    margin-bottom: 10px;
+     background-color: #252525;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+
+    .fotter-logo p {
+        font-size: 22px;
+    }
+
+    .fotter-links {
+        font-size: 18px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fotter-social-icon {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .fotter {
+        padding: 20px 10px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .fotter-logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fotter-logo img {
+        width: 60px;
+    }
+
+    .fotter-logo p {
+        font-size: 18px;
+    }
+
+    .fotter-links {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .fotter-social-icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .fotter-icon-container {
+        padding: 8px;
+    }
+
+    .fotter-copyright {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .fotter-copyright hr {
+        width: 90%;
+        height: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .fotter-logo p {
+        font-size: 16px;
+    }
+
+    .fotter-links {
+        font-size: 14px;
+    }
+
+    .fotter-copyright {
+        font-size: 12px;
+    }
+}
