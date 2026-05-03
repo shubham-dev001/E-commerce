@@ -4,6 +4,7 @@ import "./Css/ListProduct.css"
 
 const ListProduct = () => {
   const Host = "https://e-commerce-backend-aslv.onrender.com";
+  // const Host = "http://localhost:8000";
   const [allProducts, setAllProducts] = useState([])
   const fetchInfo = async () => {
     await fetch(`${Host}/allproduct`)

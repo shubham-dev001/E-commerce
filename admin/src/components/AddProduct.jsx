@@ -24,6 +24,7 @@ const AddProduct = () => {
 
     const Add_product = async () => {
         const Host = "https://e-commerce-backend-aslv.onrender.com";
+        // const Host = "http://localhost:8000";
         let responseData;
         let product = productDetails;
         let formdata = new FormData()
