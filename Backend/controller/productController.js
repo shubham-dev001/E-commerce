@@ -1,5 +1,5 @@
 const Product = require("../models/product")
-const Host = "https://e-commerce-backend-aslv.onrender.com"
+const URL = "https://e-commerce-backend-aslv.onrender.com"
 // const URL = "http://localhost:8000"
     
 
