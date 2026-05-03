@@ -202,3 +202,9 @@
         transform: scale(0.8);
      }
 }
+
+@media (max-width: 450px) {
+  .navbar{
+    padding: 0px 0px;
+  }
+}
