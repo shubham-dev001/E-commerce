@@ -30,8 +30,7 @@ app.use("/image", express.static("upload/image"))
 app.use("/", productRoutes)
 app.use("/api", userRoutes)
 
-
-const PORT = process.env.PORT || 8000;
+const PORT=8000;
 app.listen(PORT, () => {
     console.log(`app listening on port ${PORT}`);
     
