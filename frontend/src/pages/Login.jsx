@@ -35,8 +35,8 @@ const Login = () => {
     const setStyle = {
        backgroundColor: "skyblue",
        color: "black", 
-       width: 400, 
-       height: 340, 
+       width: 300, 
+       height: "auto", 
        marginBottom: 60,
     }
   return (
@@ -67,7 +67,7 @@ const Login = () => {
             />
           </div>
           <button type="submit" className="btn btn-primary mb-3  w-100">Login</button>
-          <p className="text-center mt-3">
+          <p className="text-center mt-2">
             Don't have an account? <Link to="/signup">Signup</Link>
           </p>
         </form>

@@ -1,5 +1,7 @@
 const Product = require("../models/product")
-const Host = "https://e-commerce-backend-aslv.onrender.com";
+const Host = "https://e-commerce-backend-aslv.onrender.com"
+    
+
 
 exports.createProduct = async (req, res) => {
     let products = await Product.find({});
@@ -50,6 +52,7 @@ exports.allProduct = async (req, res) => {
 };
 
 exports.uploadImage = (req, res) => {
+    console.log("FILE DATA:", req.file);
     res.json({
         success: 1,
         image_url: `${Host}/image/${req.file.filename}`

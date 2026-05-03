@@ -97,7 +97,7 @@ width: 100%;
     }
 
     .fotter-links {
-        flex-direction: column;
+       
         gap: 10px;
         font-size: 16px;
     }

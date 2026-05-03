@@ -11,7 +11,7 @@
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     gap: 30px;
 }
-.news-letter h{
+.news-letter h1{
     color: gray;
     font-size: 50px;
     font-weight: 600;
@@ -50,4 +50,115 @@
     border: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media(max-width:1280px){
+   .news-letter{
+    padding: 0px 80px;
+    margin-bottom: 120px;
+    gap: 20px;
+   }
+   .news-letter h1{
+    font-size: 40px;
+   }
+   .news-letter p{
+    font-size: 25px;
+}
+    .news-letter div{
+        width: 600px;
+        height: 90px;
+    }
+.news-letter input{
+    width: 350px;
+    height: 50px;
+}
+.news-letter button{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+}
+
+@media(max-width:1024px){
+   .news-letter{
+    padding: 0px 60px;
+    margin-bottom: 100px;
+    gap: 20px;
+   }
+   .news-letter h1{
+    font-size: 30px;
+   }
+   .news-letter p{
+    font-size: 20px;
+}
+    .news-letter div{
+        width: 500px;
+        height: 70px;
+    }
+.news-letter input{
+    width: 300px;
+    height: 40px;
+}
+.news-letter button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+}
+
+@media(max-width:800px){
+   .news-letter{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+   }
+   .news-letter h1{
+    font-size: 25px;
+   }
+   .news-letter p{
+    font-size: 20px;
+}
+    .news-letter div{
+        width: 200px;
+        height: 60px;
+    }
+.news-letter input{
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+}
+.news-letter button{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+}
+}
+
+@media(max-width:500px){
+   .news-letter{
+    margin-top: 0px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+   }
+   .news-letter h1{
+    font-size: 20px;
+   }
+   .news-letter p{
+    font-size: 15px;
+}
+    .news-letter div{
+        width: 150px;
+        height: 40px;
+    }
+.news-letter input{
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+}
+.news-letter button{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+}
 }

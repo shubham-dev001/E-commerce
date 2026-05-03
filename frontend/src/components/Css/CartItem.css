@@ -4,7 +4,7 @@
 .cartitem hr{
     height: 3px;
     border: 0;
-    background-color: #e2e2e2;
+    background-color: #050505;
 }
 .cartitem-format-main{
     display: grid;
@@ -24,7 +24,7 @@
     height: 120px;
 }
 .cartitem-remove-icon{
-    width: 25px;
+    width: 20px;
     margin: 0px 40px;
     cursor: pointer;
 }
@@ -49,4 +49,48 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 0px;
+}
+@media(max-width:1280px){
+    .cartitem{
+        margin: 60px 50px;
+    }
+    .cartitem-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 19px;
+    }
+    .carticon-producticon{
+        height: 70px;
+    }
+    .cartitem-remove-icon{
+        margin: auto;
+    }
+    .cartitem-quantity{
+        height: 40px;
+        width: 40px;
+    }
+    .cartitem-down{
+        margin: 80px 0px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .cartitem-total{
+        margin: 0px;
+    }
+}
+@media(max-width:500px){
+    .cartitem-format-main{
+        display: none;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 10px;
+        font-size: 15px;
+    }
+    .cartitem-format{
+        display: grid;
+    }
+    .cartitem-quantity{
+        height: 30px;
+        width: 30px;
+    }
 }
