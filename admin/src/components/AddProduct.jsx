@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 
 const AddProduct = () => {
-    navigation = useNavigate()
+   const navigation = useNavigate()
     const [image, setImage] = useState(false)
     const [productDetails, setProductDetails] = useState({
         name: "",
@@ -31,9 +31,6 @@ const AddProduct = () => {
         formdata.append("product", image)
         await fetch(`${Host}/upload`, {
             method: "POST",
-            headers: {
-                Accept: "application/json",
-            },
             body: formdata,
         }).then((res) => res.json()).then((data) => { responseData = data })
         if (responseData?.success) {
@@ -41,12 +38,14 @@ const AddProduct = () => {
             console.log(product);
 
             await fetch(`${Host}/addproduct`, {
+                
                 method: "POST",
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(product),
+                
             }).then((res) => res.json()).then((data) => {
 
                 toast.success(data.success ? "Product added " : "Failed", { autoClose: 1000 })

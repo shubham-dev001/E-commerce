@@ -53,9 +53,17 @@ exports.allProduct = async (req, res) => {
 };
 
 exports.uploadImage = (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ success: false, message: "No file" });
+    }
     res.json({
-        success: 1,
-        image_url: `${URL}/image/${req.file.filename}`
-    })
-}
+      success: true,
+      image_url: req.file.path
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+};
 
